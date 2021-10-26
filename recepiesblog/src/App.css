@@ -1,0 +1,135 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000;
+  line-height: 1.5;
+  font-family: "Muli", sans-serif;
+  background-color: #f2f2f2;
+  /* background-image: url(./images/pexels-dominika-roseclay-2208891.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 800;
+}
+
+ul,
+ol {
+  padding-left: 40px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.r2em;
+}
+
+h3 {
+  font-size: 1.0rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+.featuredImage {
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  height: 60px;
+  line-height: 60px;
+  background: #f2f2f2;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.logo {
+  line-height: 60px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+main .wrapper {
+  padding: 50px 15px;
+}
+
+.post {
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: SeaShell;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, .13), 1px 2px 2px rgba(0, 0, 0, .1), -1px -2px 2px rgba(0, 0, 0, .05);
+}
+
+.post img {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: maroon;
+}
+
+.listOfArticles {
+  color: SaddleBrown;
+  background-color: SeaShell;
+  padding: 30px 30px 30px 60px;
+}
+
+/* .linkToArticle {
+  
+} */
+
+button {
+  background-color: SaddleBrown;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+}

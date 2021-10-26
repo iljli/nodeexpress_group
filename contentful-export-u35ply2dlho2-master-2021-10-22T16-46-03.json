@@ -1,0 +1,1208 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "recepies",
+        "type": "ContentType",
+        "createdAt": "2021-10-07T17:42:52.319Z",
+        "updatedAt": "2021-10-11T16:05:34.755Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2021-10-11T16:05:34.755Z",
+        "firstPublishedAt": "2021-10-07T17:42:52.693Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Recepies",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "featureImage",
+          "name": "FeatureImage",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "lastUpdated",
+          "name": "Last updated on",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "u35ply2dlho2",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2021-10-07T17:42:53.014Z",
+        "createdBy": {
+          "sys": {
+            "id": "5FWWMSEJyKddzmXj57Kvzg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2021-10-11T16:05:35.668Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5FWWMSEJyKddzmXj57Kvzg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "recepies",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "featureImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "lastUpdated",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "5Tdr2Bkw7uSDcHx9NTa4zs",
+        "type": "Entry",
+        "createdAt": "2021-10-07T17:43:09.191Z",
+        "updatedAt": "2021-10-07T17:50:31.541Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2021-10-07T17:50:31.541Z",
+        "firstPublishedAt": "2021-10-07T17:50:31.541Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recepies"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Banana bread recipe"
+        },
+        "featureImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "48SIZafPHJRLxn3a6MdJDd"
+            }
+          }
+        },
+        "description": {
+          "en-US": "---\n\nlayout: recipe\ntitle:  \"Banana Bread\"\nimage: banana-bread.jpg\nimagecredit: https://flic.kr/p/7HZmzn\ntags: breakfast, baking\n\n__ingredients:__\n- 4 bananas\n- 1/2 cup butter\n- 1/2 cup sugar\n- 2 eggs\n- 2 cups flour\n- 1/2 tsp baking soda\n- 1 tsp baking powder\n- pinch salt\n- 1/4 cup nuts (we like pecans)\n\n__directions:__\n- Beat the eggs, then cream with the butter and sugar\n- Mix in bananas, then flour, baking soda/powder, salt, and nuts\n- Add to greased and floured pan\n- Bake until brown/cracked, toothpick comes out clean\n\n---\n\n*From Angie's mom*"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "YP2xapBNsZlomcUVP67ga",
+        "type": "Entry",
+        "createdAt": "2021-10-07T17:50:43.241Z",
+        "updatedAt": "2021-10-07T17:55:00.959Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-10-07T17:55:00.959Z",
+        "firstPublishedAt": "2021-10-07T17:55:00.959Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recepies"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Broccoli Beer Cheese Soup"
+        },
+        "featureImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3fa56am1oPOhuhzO4mSjOe"
+            }
+          }
+        },
+        "description": {
+          "en-US": "---\n\nlayout: recipe\ntitle:  \"Broccoli Beer Cheese Soup\"\nimage: broccoli-beer-cheese-soup.jpg\ntags: sides, soups\n\n__ingredients:__\n- 4 tablespoons butter\n- 1 cup diced onion\n- 1/2 cup shredded carrot\n- 1/2 cup diced celery\n- 1 tablespoon garlic\n- 1/4 cup flour\n- 1 quart chicken broth\n- 1 cup heavy cream\n- 10 ounces muenster cheese\n- 1 cup white white wine\n- 1 cup pale beer\n- 1 teaspoon Worcestershire sauce\n- 1/2 teaspoon hot sauce\n\n__directions:__\n- Start with butter, onions, carrots, celery, garlic until cooked down\n- Add flour, stir well, cook for 4-5 mins\n- Add chicken broth, bring to a boil\n- Add wine and reduce to a simmer\n- Add cream, cheese, Worcestershire, and hot sauce\n- Serve with croutons\n\n---\n\n*This recipe is inspired by one of my favorites, Gourmand's Beer Cheese Soup, which uses Shiner Bock. Feel free to use whatever you want, then go to [Gourmand's](http://lovethysandwich.com) to have the real thing.*"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "4U7aS0GC8wVjvdqqgPMwV9",
+        "type": "Entry",
+        "createdAt": "2021-10-07T17:55:09.186Z",
+        "updatedAt": "2021-10-07T17:58:05.254Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-10-07T17:58:05.254Z",
+        "firstPublishedAt": "2021-10-07T17:58:05.254Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recepies"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Crispy Carrots"
+        },
+        "featureImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "29DvPrqAVvz1MSmhrQGDBw"
+            }
+          }
+        },
+        "description": {
+          "en-US": "---\n\nlayout: recipe\ntitle:  \"Crispy Carrots\"\nimage: crispy-carrots.jpg\ntags: veg, party\n\n__ingredients:__\n- 1 lb carrot sticks (or baby carrots)\n- 2 oranges (or any citrus)\n- 2 tbsp butter\n- 1 package phyllo dough\n- 1/2 cup honey\n- sesame seeds to top\n- vegetable oil\n\n__directions:__\n- Start by parboiling your carrots in 2 cups of water (means party boil).\n- Zest and juice the oranges.\n- When the carrots are jussst soft, drain the water. Add the butter, the zest, and the orange juice. Simmer until thick and declious. It's fine (and good) if the carrots are still a bit undercooked (we're going to bake them next).\n- Unroll the phyllo dough and cut it into three equal sections. With a brush, oil the top of each sheet.\n- Roll a carrot with a single section of phyllow dough, place on a baking sheet. Repeat and repeat and repeat.\n- When a full baking sheet is ready, brush the top of each roll with a little oil. Don't worry about placing them too far about, they won't raise much (at all).\n- Bake according to your phyllo dough box.\n- With 5 minutes left, brush the top of each roll with honey, then sprinkle with sesame seeds.\n\n---\n\n*This is another recipe we saw on Jamie Oliver's TV show, and we can't stop making it. It's perfect for parties, and pairs well with any rich dip (we've been doing greek yogurt topped with hot sauce and tahini). We've also rolled things other than carrots, changed the flavors, made news dips— go wild!*"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "2HGEXbnXDds6300gWb5PIR",
+        "type": "Entry",
+        "createdAt": "2021-10-07T17:58:42.952Z",
+        "updatedAt": "2021-10-07T18:00:21.532Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-10-07T18:00:21.532Z",
+        "firstPublishedAt": "2021-10-07T18:00:21.532Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recepies"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Pork Steaks"
+        },
+        "featureImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2YbE2kK6jpBw47AmEULPZb"
+            }
+          }
+        },
+        "description": {
+          "en-US": "---\n\nlayout: recipe\ntitle:  \"Pork Steaks\"\nimage: pork-steaks.jpg\ntags: mains, meat\n\n__ingredients:__\n- pork shoulder (or other cheap cut)\n- immerison circulator (we like the [Anova](http://www.amazon.com/gp/product/B00UKPBXM4/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00UKPBXM4&linkCode=as2&tag=repl-20&linkId=XMRXWQ35OJNCZVGE))\n\n__directions:__\n- Sous vide the pork at 140° for 24h\n- Submerge bag into an ice bath to completely cool\n- Cut and portion the cold roast into individual steaks\n- Seal and save (fridge for 3 days, freezer for longer)\n- To serve, reheat in bag, sear in sourching hot pan\n\n---\n\n*Pork is called \"the other white meat\", but this sous vide technique is so dang good I'm gonna graduate it up to \"THE white meat\".*"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "4FKbQxRfy0litihz5X32Dw",
+        "type": "Entry",
+        "createdAt": "2021-10-07T20:50:14.863Z",
+        "updatedAt": "2021-10-07T20:59:33.182Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2021-10-07T20:59:33.182Z",
+        "firstPublishedAt": "2021-10-07T20:57:48.021Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recepies"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "One Minute Muffin"
+        },
+        "featureImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6vN8Zzsz5Rx3opb91UDB7m"
+            }
+          }
+        },
+        "description": {
+          "en-US": "---\n\n> layout: recipe\n> title:  \"One Minute Muffin\"\n> image: one-minute-muffin.jpg\n> imagecredit: http://divaliciousrecipes.com/2012/04/26/flax-muffin-in-a-mug-in-a-minute-low-carb-and-gluten-free/\n> tags: breakfast\n\n__ingredients:__\n- 1⁄4 cup flax seed meal\n- 1⁄2 teaspoon baking powder\n- 1 teaspoon cinnamon\n- 1 egg\n- 1 teaspoon oil\n- sugar to taste (or honey, stevia)\n\n__directions:__\n- Mix all ingredients in a coffee mug.\n- Micorowave for one minute on high.\n\n---\n\n*This flax muffin is quick, vertsatile (just mix in other goodies), and only makes one at a time, so you've got no huge tray to tempt you. Custom muffins every morning!*"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "4JZZMPDCb94KcwGzVyjbnn",
+        "type": "Entry",
+        "createdAt": "2021-10-11T14:36:47.164Z",
+        "updatedAt": "2021-10-11T14:56:42.988Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2021-10-11T14:56:42.988Z",
+        "firstPublishedAt": "2021-10-11T14:43:05.251Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "recepies"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Crockpot Buffalo Chicken"
+        },
+        "featureImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1cu04RDJJ7jGZq40zSk0Pt"
+            }
+          }
+        },
+        "description": {
+          "en-US": "---\n\n- layout: recipe\n- title:  \"Crockpot Buffalo Chicken\"\n- image: crockpot-buffalo-chicken.jpg\n- tags: mains, grill, party\n\n__ingredients:__\n- 6-8 chicken breasts\n- 1 packet ranch mix\n- 1 bottle Frank's Red Hot\n- 1 stick of butter\n\n__directions:__\n- Add all the above into a crockpot, cook on low for 6-8 hours\n- Shred chicken when soft\n- Serve with pickles and Hawaiian rolls\n\n---\n\nThis is a party favorite, perfect for a Super Bowl or a game night. It takes a long time, but like most slow cooker recipes, is easy as hell. Bonus: guests love it."
+        },
+        "lastUpdated": {
+          "en-US": "2021-10-03T18:00+02:00"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "48SIZafPHJRLxn3a6MdJDd",
+        "type": "Asset",
+        "createdAt": "2021-10-07T17:48:05.344Z",
+        "updatedAt": "2021-10-07T17:49:07.191Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2021-10-07T17:49:07.191Z",
+        "firstPublishedAt": "2021-10-07T17:49:07.191Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Banana Bread"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/u35ply2dlho2/48SIZafPHJRLxn3a6MdJDd/8685a5f3e2869b2bfefb21f824b7cbb2/4413307543_a4164d0c5a_w.jpg",
+            "details": {
+              "size": 36991,
+              "image": {
+                "width": 400,
+                "height": 267
+              }
+            },
+            "fileName": "4413307543_a4164d0c5a_w.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "3fa56am1oPOhuhzO4mSjOe",
+        "type": "Asset",
+        "createdAt": "2021-10-07T17:53:06.951Z",
+        "updatedAt": "2021-10-07T17:54:45.104Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2021-10-07T17:54:45.104Z",
+        "firstPublishedAt": "2021-10-07T17:54:45.104Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Broccoli Beer Cheese Soup"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/u35ply2dlho2/3fa56am1oPOhuhzO4mSjOe/73824010856aa46148dbba6ca3118721/Broccoli-Beer-Cheese-Soup_EXPS_SSMZ20_44950_B10_08_4b-4.jpg",
+            "details": {
+              "size": 249623,
+              "image": {
+                "width": 1200,
+                "height": 1200
+              }
+            },
+            "fileName": "Broccoli-Beer-Cheese-Soup_EXPS_SSMZ20_44950_B10_08_4b-4.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "29DvPrqAVvz1MSmhrQGDBw",
+        "type": "Asset",
+        "createdAt": "2021-10-07T17:57:25.889Z",
+        "updatedAt": "2021-10-07T17:57:52.350Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2021-10-07T17:57:52.350Z",
+        "firstPublishedAt": "2021-10-07T17:57:52.350Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Crispy Carrots"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/u35ply2dlho2/29DvPrqAVvz1MSmhrQGDBw/b7edcaae858728d2ac5d54cd134dfbb5/evskzjiir2d11.jpg",
+            "details": {
+              "size": 282909,
+              "image": {
+                "width": 1575,
+                "height": 1670
+              }
+            },
+            "fileName": "evskzjiir2d11.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "2YbE2kK6jpBw47AmEULPZb",
+        "type": "Asset",
+        "createdAt": "2021-10-07T17:58:52.478Z",
+        "updatedAt": "2021-10-07T17:59:45.523Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2021-10-07T17:59:45.523Z",
+        "firstPublishedAt": "2021-10-07T17:59:45.523Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Pork Steaks"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/u35ply2dlho2/2YbE2kK6jpBw47AmEULPZb/db8a2583ffe191aec49528b17ca7fb0f/external-content.duckduckgo.com.jpg",
+            "details": {
+              "size": 400353,
+              "image": {
+                "width": 2000,
+                "height": 1035
+              }
+            },
+            "fileName": "external-content.duckduckgo.com.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "6vN8Zzsz5Rx3opb91UDB7m",
+        "type": "Asset",
+        "createdAt": "2021-10-07T20:56:48.715Z",
+        "updatedAt": "2021-10-07T20:57:11.114Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2021-10-07T20:57:11.114Z",
+        "firstPublishedAt": "2021-10-07T20:57:11.114Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "One Minute Muffin"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/u35ply2dlho2/6vN8Zzsz5Rx3opb91UDB7m/d90da080754fb597046ed815adc12e5f/img_1603-1024x683.jpg",
+            "details": {
+              "size": 72275,
+              "image": {
+                "width": 1024,
+                "height": 683
+              }
+            },
+            "fileName": "img_1603-1024x683.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "id": "1cu04RDJJ7jGZq40zSk0Pt",
+        "type": "Asset",
+        "createdAt": "2021-10-11T14:39:11.716Z",
+        "updatedAt": "2021-10-11T14:42:50.261Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2021-10-11T14:42:50.261Z",
+        "firstPublishedAt": "2021-10-11T14:39:52.109Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Crockpot Buffalo Chicken"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/u35ply2dlho2/1cu04RDJJ7jGZq40zSk0Pt/3271e7a0eae83f7efd7edbfbd134412e/crockpot-buffalo-chicken.jpg",
+            "details": {
+              "size": 585253,
+              "image": {
+                "width": 1292,
+                "height": 969
+              }
+            },
+            "fileName": "crockpot-buffalo-chicken.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "0HgigMSlB8Y9CuZzaNmG82",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "5ffcb610-0309-4476-baeb-d82c5819d4f5"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "createdAt": "2021-10-07T17:29:46Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedAt": "2021-10-07T17:29:46Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "0Hh9fClkKVYtR2eB3JRxH4",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "u35ply2dlho2"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "createdAt": "2021-10-07T17:29:46Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5FWWMSEJyKddzmXj57Kvzg"
+          }
+        },
+        "updatedAt": "2021-10-07T17:29:46Z"
+      }
+    }
+  ]
+}
