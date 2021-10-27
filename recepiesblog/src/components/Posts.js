@@ -5,9 +5,10 @@ import Post from './Post'
 const Posts = ({ posts }) => {
     return (
         <div>
-            {posts.map((article, index) => (
-                <div>
-                    <Post  article={article} key={index} />
+            {posts && posts.map((article, index) => (
+                <div key={index.toString()} >
+                     <Post article={article.text} key={index} />
+                    {/* {article.text} */}
                 </div>
             )
 
