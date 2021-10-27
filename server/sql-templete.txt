@@ -1,0 +1,22 @@
+The following Code was executed on the SQL-Database:
+
+/* CREATE TABLE */
+CREATE TABLE recepies(
+id SERIAL PRIMARY KEY,
+title VARCHAR(255),
+headline VARCHAR(255),
+picture VARCHAR(255),
+text VARCHAR(65536)
+);
+
+/* INSERT QUERY NO: 1 */
+INSERT INTO recepies(id, title, headline, picture, text)
+VALUES (0, 'Post1', 'Crockpot Buffalo Chicken', '', 'This is a party favorite, perfect for a Super Bowl or a game night. It takes a long time, but like most slow cooker recipes, is easy as hell. Bonus: guests love it.');
+
+/* INSERT QUERY NO: 2 */
+INSERT INTO recepies(id, title, headline, picture, text)
+VALUES (1, 'Post2', 'One Minute Muffin', '', 'This flax muffin is quick, vertsatile (just mix in other goodies), and only makes one at a time, so youve got no huge tray to tempt you. Custom muffins every morning!');
+
+/* INSERT QUERY NO: 3 */
+INSERT INTO recepies(id, title, headline, picture, text)
+VALUES (2, 'Post3', 'Pork Steaks', '', 'Pork is called the other white meat, but this sous vide technique is so dang good I am gonna graduate it up to THE white meat.');
