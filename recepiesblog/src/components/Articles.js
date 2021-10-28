@@ -29,7 +29,7 @@ const Articles = props => {
                 </header>
 
                 <div>
-                    <List posts={articles} />
+                    <List posts={articles} id={"top"}/>
                 </div>
 
                 <main>

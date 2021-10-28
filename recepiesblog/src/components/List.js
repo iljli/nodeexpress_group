@@ -10,7 +10,7 @@ const List = ({ posts }) => {
                     <HashLink
                         className="linkToArticle"
                         smooth
-                        to={`/page#${article.title.replaceAll(" ", "")}`}
+                        to={`/articles#${article.id}`}
                         key={index.toString()}>
                         {article.headline}
                     </HashLink>

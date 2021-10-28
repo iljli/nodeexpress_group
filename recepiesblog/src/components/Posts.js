@@ -3,14 +3,13 @@ import Post from './Post'
 
 const Posts = ({ posts }) => {
 
-    console.log(posts);
+    // console.log(posts);
 
     return (
         <div>
             {posts && posts.map((article, index) => (
                 <div key={index.toString()} >
-                     <Post article={article.text} key={index} />
-                    {article.text}
+                     <Post text={article.text} title={article.title} headline={article.headline} key={index} id={article.id}/>
                 </div>
             )
 

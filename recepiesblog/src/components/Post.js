@@ -1,41 +1,23 @@
 import React from 'react'
 // import { Link, Route } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
-import marked from 'marked'
+// import marked from 'marked'
 import '../App.css';
 
+// const { DateTime } = require("luxon");
 
-const { DateTime } = require("luxon");
+const Post = ({ text, title, id, headline }) => {
 
-const Post = ({ article }) => {
-    // const addZero = (value) => {
-    //     if (Math.abs(value) < 10)
-    //         return (value = "0" + value) // dirty hack - mixes up string and integer
-    //     else return value
-    // }
-
-    console.log(article);
-    // const { name, featureImage, description, lastUpdated } = article.fields;
-    // const postDescription = marked(description);
-    // const timestamp = {
-    //     hour: addZero(DateTime.fromISO(lastUpdated).hour),
-    //     minute: addZero(DateTime.fromISO(lastUpdated).minute),
-    //     second: addZero(DateTime.fromISO(lastUpdated).second),
-    //     year: addZero(DateTime.fromISO(lastUpdated).year),
-    //     month: addZero(DateTime.fromISO(lastUpdated).month),
-    //     day: addZero(DateTime.fromISO(lastUpdated).day),
-    // }
-
+    // console.log(article);
+    // console.log(id);
 
     return (
-        <div>
-         {/* <div className={'post'} id={article.fields.name.replaceAll(" ", "")}> */}
-             {/* <h2 className={'title'}>{name}</h2> */}
+         <div className={'post'} id={id}>
+             <h2 className={'title'}>{title}</h2>
+             <h3 className={'headline'}>{headline}</h3>
             {/* {featureImage && <img className='featureImage' src={featureImage.fields.file.url} alt={name} title={name} />} */}
-            {/* <section dangerouslySetInnerHTML={{ __html: postDescription }} /> */}
-            {/* {lastUpdated && <p>Last updated: {timestamp.year}/{timestamp.month}/{timestamp.day} {timestamp.hour}:{timestamp.minute}:{timestamp.second}</p>} */}
-            {article}
-             <HashLink className="linkToArticle" smooth to='/page#home'>
+            {text}
+             <HashLink className="linkToArticle" smooth to='articles#top'>
                  <button> Go Up</button>
              </HashLink>
         </div>

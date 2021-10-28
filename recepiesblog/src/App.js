@@ -1,12 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import { Link, Switch, Route } from 'react-router-dom'
 import './normilize.css';
-// import './App.css';
-// const express = require('express');
-// const blog = express();
-// import Posts from './components/Posts';
-// import List from './components/List';
-// const article = require('./articles');
 import Articles from './components/Articles'
 import Backend from './components/Backend'
 
