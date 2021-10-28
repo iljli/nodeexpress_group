@@ -11,19 +11,19 @@ Installed packages:
 const express = require('express');
 const app = express();
 require("dotenv").config();                 // for .env file
-// const path = require('path');
 const travelRouter = require('./database/modules');
 const cors = require('cors');
 
 app.use(express.json());
-// app.use(express.static(path.join(__dirname,'public')));
 app.use(cors()); // allows to enable cors
 
+
+// const path = require('path');
+// app.use(express.static(path.join(__dirname,'public')));
 // app.get('/', (req, res) => {
 //     // res.send(`Welcome to your Recepies-Blog API`)
 //     res.sendFile(path.join(__dirname, 'HTML', 'index.html'))
 // })
-
 
 
 app.use('/api/articles', travelRouter);
