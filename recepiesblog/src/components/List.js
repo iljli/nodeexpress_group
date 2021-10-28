@@ -29,5 +29,5 @@ const List = ({ posts }) => {
 }
 
 
-export default List
+export default List;
 
