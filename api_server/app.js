@@ -17,6 +17,7 @@ const multer = require("multer");
 app.use(express.json());
 app.use(cors()); // allows to enable cors
 const path = require("path");
+const db = require("./database/client");
 
 const uploadFolder = path.resolve("./public/uploads");
 
@@ -58,7 +59,24 @@ const validate = (req, res, next) => {
 const uploadFilenameToSQL = (req, res, next) => {
     console.log("Test Filename...");
     console.log(req.newFilename);
-    console.log(req.body);
+    const userInput = JSON.parse(req.body.userInput);
+    console.log(userInput);
+
+    const createOneArticle = {
+        text: `
+        INSERT INTO recepies (title, headline, picture, text)
+        VALUES ($1, $2, $3, $4)
+        RETURNING *;
+        `,
+        values: [userInput.title, userInput.headline, req.newFilename, userInput.text],
+    };
+    console.log(".............................................")
+    console.log(createOneArticle);
+
+    
+    db.query(createOneArticle)
+        // .then((dbData) => res.status(201).json(dbData.rows)) ???
+        .catch((err) => res.sendStatus(500));
     next();
 }
 

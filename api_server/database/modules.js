@@ -32,26 +32,26 @@ myRouter.get('/', (req, res) => {
 
 
 
-myRouter.post('/', (req, res) => {
+// myRouter.post('/', (req, res) => {
 // ToDo: - article already exists
 // ToDo: - validate input
-    const { title, headline, picture, text } = req.body;
+    // const { title, headline, picture, text } = req.body;
 
-    const createOneArticle = {
-        text: `
-        INSERT INTO recepies (title, headline, picture, text)
-        VALUES ($1, $2, $3, $4)
-        RETURNING *;
-        `,
-        values: [title, headline, req.newFilename, text],
-    };
-    console.log(".............................................")
-    console.log(req.body);
+    // const createOneArticle = {
+    //     text: `
+    //     INSERT INTO recepies (title, headline, picture, text)
+    //     VALUES ($1, $2, $3, $4)
+    //     RETURNING *;
+    //     `,
+    //     values: [title, headline, req.newFilename, text],
+    // };
+    // console.log(".............................................")
+    // console.log(req.body);
 
     // db.query(createOneArticle)
     //     .then((dbData) => res.status(201).json(dbData.rows))
     //     .catch((err) => res.sendStatus(500));
-})
+// })
 
 
 
