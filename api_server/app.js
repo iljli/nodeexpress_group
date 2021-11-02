@@ -20,6 +20,8 @@ const path = require("path");
 const db = require("./database/client");
 
 const uploadFolder = path.resolve("./public/uploads");
+// make the folder available for public:
+app.use(express.static(path.join(__dirname, '/public')));
 
 // define the destination where to upload and
 // change the filename if desired

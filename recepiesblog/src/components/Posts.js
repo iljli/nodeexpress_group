@@ -9,7 +9,7 @@ const Posts = ({ posts }) => {
         <div>
             {posts && posts.map((article, index) => (
                 <div key={index.toString()} >
-                     <Post text={article.text} title={article.title} headline={article.headline} key={index} id={article.id}/>
+                     <Post text={article.text} title={article.title} headline={article.headline} key={index} id={article.id} picture={article.picture}/>
                 </div>
             )
 
