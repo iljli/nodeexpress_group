@@ -25,16 +25,17 @@ myRouter.get('/', (req, res) => {
 })
 
 
+// myRouter.post('/picture', (req, res) => {
+//     const { filename_original, filaname_save, file_url} = req.body;
+//     console.log(`${filename_original} ${filaname_save} ${file_url}`);
+// })
+
+
+
 myRouter.post('/', (req, res) => {
 // ToDo: - article already exists
 // ToDo: - validate input
     const { title, headline, picture, text } = req.body;
-    // const errors = validationResult(req);
-    // if (!errors.isEmpty()) {
-    //     return res.status(402).json({
-    //         errors: errors.array(),
-    //     });
-    // }
 
     const createOneArticle = {
         text: `
@@ -42,12 +43,14 @@ myRouter.post('/', (req, res) => {
         VALUES ($1, $2, $3, $4)
         RETURNING *;
         `,
-        values: [title, headline, picture, text],
+        values: [title, headline, req.newFilename, text],
     };
+    console.log(".............................................")
+    console.log(req.body);
 
-    db.query(createOneArticle)
-        .then((dbData) => res.status(201).json(dbData.rows))
-        .catch((err) => res.sendStatus(500));
+    // db.query(createOneArticle)
+    //     .then((dbData) => res.status(201).json(dbData.rows))
+    //     .catch((err) => res.sendStatus(500));
 })
 
 

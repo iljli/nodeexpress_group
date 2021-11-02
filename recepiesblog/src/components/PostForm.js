@@ -21,14 +21,6 @@ const PostForm = ({ onSubmit, onChange, userInput, onClear }) => {
           onChange={onChange}
         />
         <br/>
-        <label htmlFor="picture">Picture</label>
-        <input
-          type="text"
-          name="picture"
-          value={userInput.picture}
-          onChange={onChange}
-        />
-        <br/>
         <label htmlFor="text">Article</label>
         <textarea
           name="text"
