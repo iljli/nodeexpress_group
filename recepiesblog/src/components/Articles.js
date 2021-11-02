@@ -1,16 +1,25 @@
 import React, { useEffect, useState } from 'react';
 
 import '../normilize.css';
-import List from './List';
+import ListPosts from './ListPosts';
 import Posts from './Posts';
+import Menu from './Menu';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import { HashLink } from 'react-router-hash-link';
+import Button from '@mui/material/Button';
+import '../App.css'
 
-const Articles = props => {
+
+const Articles = ({ colorPrimary, colorSecondary }) => {
 
     const [articles, setArticles] = useState();
 
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/articles")
+        fetch("http://localhost:4000/api/articles")
             .then((res) => res.json())
             .then((data) => setArticles(data))
             .catch((err) => console.log(err));
@@ -19,26 +28,32 @@ const Articles = props => {
 
 
     return (
-        <div className="App">
-            <div className='container'>
+        <>
+            <Menu posts={articles} colorPrimary={colorPrimary} colorSecondary={colorSecondary} />
+            <Container>
+                <Typography mt={15} className="hero__title" variant="h1" component="h1">
+                    Amaizing Colection of Recepies
+                </Typography>
 
-                <header>
-                    <div className='wrapper' id="home">
-                        <span>Amaizing Colection of Recepies</span>
-                    </div>
-                </header>
+            </Container>
+            {/* <ListPosts posts={articles} id={"top"} /> */}
 
-                <div>
-                    <List posts={articles} id={"top"}/>
-                </div>
+            <main>
+                <Posts posts={articles} />
 
-                <main>
-                    <div className='wrapper'>
-                        <Posts posts={articles} />
-                    </div>
-                </main>
-            </div>
-        </div>
+                <HashLink smooth to='articles#top'>
+                    <IconButton size="large" color={colorSecondary} variant="outlined" className="btn__up" aria-label="up"
+                        sx={{
+                            position: "fixed",
+                            right: "3rem",
+                            bottom: "3rem",
+                        }}>
+                        <ArrowUpwardIcon fontSize="inherit" />
+                    </IconButton>
+                </HashLink>
+            </main>
+
+        </>
     )
 }
 
