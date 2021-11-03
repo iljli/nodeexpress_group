@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import PostForm from './PostForm'
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
