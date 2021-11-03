@@ -36,7 +36,7 @@ const Backend = props => {
     const [selectedFile, setSelectedFile] = useState();
 
     const handleClear = () => {
-        console.log("handleClear");
+        // console.log("handleClear");
         setStatus({ postToDatabaseDone: false });
         setUserInput(emptyUserInput);
     }
@@ -49,8 +49,13 @@ const Backend = props => {
         // add file to FormData object
         const fd = new FormData();
         fd.append('file', file);
-        fd.append('userInput', userInput);
+        Object.entries(userInput).forEach(([key, value]) => {
+            fd.append(key, value);
+        })
 
+        console.log(fd.get('headline'))
+        // multipart/form-data
+        // console.log(fd)
         // send `POST` request
         fetch('http://localhost:4000/upload', {
             method: 'POST',
@@ -61,20 +66,24 @@ const Backend = props => {
             .catch(err => console.error(err));
     }
 
-    const onChangeHandlerFileSelect = (event) => {
-        // console.log(event.target.files[0]);
-        setSelectedFile(event.target.files[0]);
-        // setUserInput({...userInput, selectedFile});
-    }
+    // const onChangeHandlerFileSelect = (event) => {
+    //     // console.log(event.target.files[0]);
+    //     setSelectedFile(event.target.files[0]);
+    //     // setUserInput({...userInput, selectedFile});
+    // }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("test")
-        console.log(userInput);
+        // console.log("test")
+        // console.log(userInput);
         // ToDo: input-validation with error handling
+        // uploadFile(selectedFile);
+        // console.log(JSON.stringify(userInput));
         uploadFile(selectedFile);
 
         const apiURL = "http://localhost:4000/api/articles";
+
+        console.log({ userInput })
 
         const parameters = {
             method: "POST",
@@ -95,28 +104,27 @@ const Backend = props => {
                 console.log(e);
             });
 
-        uploadFile(selectedFile, JSON.stringify(userInput));
     }
 
 
 
-    const submitHandler = (e) => {
-        console.log("Upload");
-        console.log(selectedFile);
+    // const submitHandler = (e) => {
+    //     console.log("Upload");
+    //     console.log(selectedFile);
 
-        uploadFile(selectedFile);
+    //     uploadFile(selectedFile);
 
-        e.preventDefault();
+    //     e.preventDefault();
 
-        // ToDo: input-validation with error handling
-    }
+    //     // ToDo: input-validation with error handling
+    // }
 
     const onFileChange = (event) => {
-        console.log(event.target.files[0]);
+        // console.log(event.target.files[0]);
         setSelectedFile(event.target.files[0]);
     }
     useEffect(() => {
-        console.log(status);
+        // console.log(status);
 
     }, [userInput, status])
 

@@ -58,11 +58,9 @@ const validate = (req, res, next) => {
     }
 }
 
-const uploadFilenameToSQL = (req, res, next) => {
-    console.log("Test Filename...");
-    console.log(req.newFilename);
-    const userInput = JSON.parse(req.body.userInput);
-    console.log(userInput);
+const createNewRecipe = (req, res, next) => {
+    const { title, headline, text } = req.body
+    const { newFilename } = req
 
     const createOneArticle = {
         text: `
@@ -70,14 +68,9 @@ const uploadFilenameToSQL = (req, res, next) => {
         VALUES ($1, $2, $3, $4)
         RETURNING *;
         `,
-        values: [userInput.title, userInput.headline, req.newFilename, userInput.text],
+        values: [title, headline, newFilename, text],
     };
-    console.log(".............................................")
-    console.log(createOneArticle);
-
-
     db.query(createOneArticle)
-        // .then((dbData) => res.status(201).json(dbData.rows)) ???
         .catch((err) => res.sendStatus(500));
     next();
 }
@@ -89,7 +82,7 @@ const uploadFilenameToSQL = (req, res, next) => {
 const upload = multer({ storage: storage, fileFilter: validate });
 // var upload = multer({ dest: "../public/uploads/" });
 
-app.post("/upload", upload.single("file"), uploadFilenameToSQL, async (req, res) => {
+app.post("/upload", upload.single("file"), createNewRecipe, async (req, res) => {
     try {
         if (req.file) {
             res.send({
