@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import React from 'react'
 import PostForm from './PostForm'
 import Container from '@mui/material/Container';
@@ -61,6 +60,12 @@ const Backend = props => {
             .catch(err => console.error(err));
     }
 
+    const onChangeHandlerFileSelect = (event) => {
+        // console.log(event.target.files[0]);
+        setSelectedFile(event.target.files[0]);
+        // setUserInput({...userInput, selectedFile});
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("test")
@@ -88,6 +93,8 @@ const Backend = props => {
                 setUserInput(emptyUserInput);
                 console.log(e);
             });
+
+        uploadFile(selectedFile, JSON.stringify(userInput));
     }
 
 

@@ -9,10 +9,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 // const { DateTime } = require("luxon");
 
-const Post = ({ text, title, id, headline }) => {
+const Post = ({ text, title, id, headline, picture }) => {
 
     // console.log(article);
     // console.log(id);
+    const linkPicture = `http://localhost:3000/uploads/${picture}`;
 
     return (
         <Card sx={{
