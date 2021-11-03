@@ -49,6 +49,7 @@ const Backend = props => {
         // add file to FormData object
         const fd = new FormData();
         fd.append('file', file);
+        fd.append('userInput', userInput);
 
         // send `POST` request
         fetch('http://localhost:4000/upload', {

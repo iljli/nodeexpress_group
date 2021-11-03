@@ -29,7 +29,7 @@ const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, uploadFolder);
     },
-    filename: (req, file, cb) => { 
+    filename: (req, file, cb) => {
         // console.log(file);
         const timestamp = Date.now();
         const newFilename = `${timestamp}_${file.originalname}`;
@@ -75,7 +75,7 @@ const uploadFilenameToSQL = (req, res, next) => {
     console.log(".............................................")
     console.log(createOneArticle);
 
-    
+
     db.query(createOneArticle)
         // .then((dbData) => res.status(201).json(dbData.rows)) ???
         .catch((err) => res.sendStatus(500));
@@ -90,21 +90,21 @@ const upload = multer({ storage: storage, fileFilter: validate });
 // var upload = multer({ dest: "../public/uploads/" });
 
 app.post("/upload", upload.single("file"), uploadFilenameToSQL, async (req, res) => {
-  try {    
-    if (req.file) {
-      res.send({
-        status: true,
-        message: "File Uploaded!",
-      });
-    } else {
-      res.status(400).send({
-        status: false,
-        data: "File Not Found :(",
-      });
+    try {
+        if (req.file) {
+            res.send({
+                status: true,
+                message: "File Uploaded!",
+            });
+        } else {
+            res.status(400).send({
+                status: false,
+                data: "File Not Found :(",
+            });
+        }
+    } catch (err) {
+        res.status(500).send(err);
     }
-  } catch (err) {
-    res.status(500).send(err);
-  }
 });
 
 app.use('/api/articles', travelRouter);
