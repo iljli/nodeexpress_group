@@ -1,42 +1,39 @@
 import React from 'react'
 // import { Link, Route } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
-import marked from 'marked'
-import '../App.css';
+// import marked from 'marked'
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+// const { DateTime } = require("luxon");
 
+const Post = ({ text, title, id, headline, picture }) => {
 
-const { DateTime } = require("luxon");
-
-const Post = ({ article }) => {
-    const addZero = (value) => {
-        if (Math.abs(value) < 10)
-            return (value = "0" + value) // dirty hack - mixes up string and integer
-        else return value
-    }
-
-    console.log(article);
-    const { name, featureImage, description, lastUpdated } = article.fields;
-    const postDescription = marked(description);
-    const timestamp = {
-        hour: addZero(DateTime.fromISO(lastUpdated).hour),
-        minute: addZero(DateTime.fromISO(lastUpdated).minute),
-        second: addZero(DateTime.fromISO(lastUpdated).second),
-        year: addZero(DateTime.fromISO(lastUpdated).year),
-        month: addZero(DateTime.fromISO(lastUpdated).month),
-        day: addZero(DateTime.fromISO(lastUpdated).day),
-    }
-
+    // console.log(article);
+    // console.log(id);
+    const linkPicture = `http://localhost:3000/uploads/${picture}`;
 
     return (
-        <div className={'post'} id={article.fields.name.replaceAll(" ", "")}>
-            <h2 className={'title'}>{name}</h2>
-            {featureImage && <img className='featureImage' src={featureImage.fields.file.url} alt={name} title={name} />}
-            <section dangerouslySetInnerHTML={{ __html: postDescription }} />
-            {lastUpdated && <p>Last updated: {timestamp.year}/{timestamp.month}/{timestamp.day} {timestamp.hour}:{timestamp.minute}:{timestamp.second}</p>}
-            <HashLink className="linkToArticle" smooth to='/page#home'>
-                <button> Go Up</button>
-            </HashLink>
-        </div>
+        <Card sx={{
+            width: 600,
+            marginBottom: 3,
+            backgroundColor: "#f3e5f5"
+
+        }} id={id}>
+            <CardContent>
+                <Typography variant="h3" component="div">
+                    {title}
+                </Typography>
+                <Typography variant="h4" component="div">
+                    {headline}
+                </Typography>
+                <Typography variant="body2">
+                    {text}
+                </Typography>
+            </CardContent>
+        </Card>
     )
 }
 

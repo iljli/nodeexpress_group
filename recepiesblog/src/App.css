@@ -58,9 +58,6 @@ ol,
   margin-bottom: 20px;
 }
 
-li {
-  margin-bottom: 10px;
-}
 
 .container {
   display: flex;
@@ -68,14 +65,14 @@ li {
   min-height: 100vh;
 }
 
-header {
+/* header {
   height: 60px;
   line-height: 60px;
   background: #f2f2f2;
   text-align: center;
-  color: #fff;
+  color: black;
   font-size: 2rem;
-}
+} */
 
 .wrapper {
   width: 100%;
@@ -96,7 +93,8 @@ main .wrapper {
 
 .post {
   padding: 20px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   background-color: SeaShell;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, .13), 1px 2px 2px rgba(0, 0, 0, .1), -1px -2px 2px rgba(0, 0, 0, .05);
 }
@@ -131,5 +129,77 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  border-radius: 4px;
+  border-radius: 8px;
+}
+
+/* grid */
+.row {
+  display: flex;
+}
+
+/* Styles for components */
+.home {
+  display: flex;
+}
+
+.home__title {
+  text-align: center;
+}
+
+.home .row {
+  justify-content: center;
+}
+
+.menucard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 45%;
+  padding: 1rem;
+}
+
+.menucard:first-of-type {
+  margin-right: 2.5%;
+}
+
+.menucard:last-of-type {
+  margin-left: 2.5%;
+}
+
+.menucard__link {
+  text-decoration: none;
+  color: #e53935;
+}
+
+.menu__anchor {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero__title {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.btn__up {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+}
+
+main {
+  padding-top: 100px;
+}
+
+.form {
+  margin: 2rem auto 0;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__group {
+  width: 100%;
+  margin-bottom: 1rem !important;
 }

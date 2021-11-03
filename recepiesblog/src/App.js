@@ -1,45 +1,45 @@
-import React from 'react';
+import { Link, Switch, Route } from 'react-router-dom'
 import './normilize.css';
-// import './App.css';
-// const express = require('express');
-// const blog = express();
-import Posts from './components/Posts';
-import List from './components/List';
-const article = require('./articles');
+import Articles from './components/Articles'
+import Backend from './components/Backend'
+import Home from './components/Home'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+const myTheme = createTheme({
+  palette: {
+    primary: {
+      light: '#ffffff',
+      main: '#f3e5f5',
+      dark: '#c0b3c2',
+      contrastText: '#000000',
+    },
+    secondary: {
+      light: '#ff6f60',
+      main: '#e53935',
+      dark: '#ab000d',
+      contrastText: '#ffffff',
+    },
+  },
+});
+
 
 function App() {
 
 
-  // console.log(article)
-
-  // Server: http://localhost:4444
-
   return (
-    <div className="App">
-      <div className='container'>
-
-        <header>
-          <div className='wrapper' id="home">
-            <span>Amaizing Colection of Recepies</span>
-          </div>
-        </header>
-
-        <div>
-          <List posts={article} />
-        </div>
-
-        <main>
-          <div className='wrapper'>
-            {/* <Posts posts={this.state.articles} /> */}
-          </div>
-        </main>
-      </div>
-    </div>
+    <ThemeProvider theme={myTheme}>
+      <Switch>
+        <Route exact path="/">
+          <Home colorPrimary="primary" colorSecondary="secondary" />
+        </Route>
+        <Route path="/articles">
+          <Articles colorPrimary="primary" colorSecondary="secondary" />
+        </Route>
+        <Route path="/backend">
+          <Backend />
+        </Route>
+      </Switch>
+    </ThemeProvider>
   );
 }
 
 export default App;
-
-
-//creation of an API
-
